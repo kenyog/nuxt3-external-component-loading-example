@@ -1,4 +1,5 @@
-import * as Vue from 'vue/dist/vue.esm-bundler';
+//import * as Vue from 'vue/dist/vue.esm-bundler';
+import * as Vue from 'vue';
 if (process.client) {
   window.Vue = Vue;
 }
