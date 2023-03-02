@@ -1,20 +1,14 @@
-# Nuxt 3 Minimal Starter
+# Nuxt.js example application for loading external `.vue` modules at runtime
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This application is an example for loading an external-downloadable-component which is compiled from `.vue` file.
 
-## Setup
+## How to run
 
-Make sure to install the dependencies:
+Install the dependencies:
 
 ```bash
-# yarn
-yarn install
-
 # npm
 npm install
-
-# pnpm
-pnpm install
 ```
 
 ## Development Server
@@ -25,18 +19,19 @@ Start the development server on http://localhost:3000
 npm run dev
 ```
 
+Before you access the application in a browser,
+run the server [Component building example](../component-building-example) for publishing external-component.
+
+In a browser window, you can chose external modules.
+The selected module , external-component, is loaded and will be displayed at the time.
+
+
 ## Production
 
-Build the application for production:
+Build the application for production and run it:
 
 ```bash
 npm run build
+node .output/server/index.mjs
 ```
 
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

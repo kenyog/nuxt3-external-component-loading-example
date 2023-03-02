@@ -1,7 +1,28 @@
-# Vue 3 + Vite
+# Example for compile `.vue` file into `.js` for browser
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This package is the example for building .js file from .vue file for loading by nuxt.js runtime environment.
+Additionally, the package provides http server for publishing the .js file.
 
-## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## How to
+
+1. Intall dependencies.
+   ~~~
+   npm install
+   ~~~
+
+2. Compile `src/*.vue` files and output `public/*.umd.js`.  
+   Acutal building process was implemented in `build.js`.
+   ~~~
+   npm run build
+   ~~~
+
+3. Publish `public/.umd.js` files.
+   ~~~
+   npm start
+   ~~~
+
+Then, the compiled `.vue` files can be donwloaded from http://localhost:30001/xxxx.umd.js.
+You can use these files from Vue applications.
+[How to use it](../component-loading-example)
+
