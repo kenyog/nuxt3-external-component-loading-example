@@ -15,9 +15,9 @@ Vue3のドキュメントには[動的コンポーネント](https://ja.vuejs.or
 
 というわけで、以下の機能をこのリポジトリのサンプルで例示している
 
-* `.vue`ファイルをビルドして、ブラウザで読み込める形式にする --> ()[./component-building-example]
-* `.vue`ファイルをhttp で公開する --> ()[./component-building-example]
-* Nuxtアプリケーションで公開された`.vue`を読み込んで描画する --> ()[./component-loading-example]
+* `.vue`ファイルをビルドして、ブラウザで読み込める形式にする --> [./component-building-example](./component-building-example)
+* `.vue`ファイルをhttp で公開する --> [./component-building-example](./component-building-example)
+* Nuxtアプリケーションで公開された`.vue`を読み込んで描画する --> [./component-loading-example](./component-loading-example)
 
 
 ## References
